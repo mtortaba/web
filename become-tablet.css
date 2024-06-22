@@ -1,0 +1,593 @@
+
+@media (min-width: 600px) and (max-width: 900px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size:15px;
+    color:#172655;
+    
+}
+#montserrat{
+    font-family:"Montserrat", sans-serif;
+    font-size: 15px;
+}
+header a[href^="mailto"]{
+    text-decoration: none;
+}
+
+
+.cabecera-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    background-color: #D11067;
+    width: 100%;
+    
+    }
+
+
+.header-container{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #D11067;
+    width: 100%;
+    padding: 5px 25px 10px 10px; 
+}
+
+.icons-header img{
+    width: 20px;
+    height: 20px;
+}
+
+.header-container div:nth-child(1){
+    min-width: 180px;
+    text-align: left;
+}
+.header-container div:nth-child(2){
+    min-width: 180px;
+    text-align: left;
+}    
+.header-container div:nth-child(3){
+    text-align: right;
+}
+
+.container-imagenes-header{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color:  #D11067;
+    padding-top: 15px;
+    width: 100%;
+    
+
+}
+
+.container-imagenes-header .imagenes{
+    text-align: left;
+    
+
+    
+}
+
+.icons-header {
+    width: 400px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fafafa;
+    margin: 4px 0;
+}
+.cabecera{
+
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    width: 150x;
+    border-radius: 10px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color:#FFF616;
+    text-decoration: none;
+    font-size: 18px;
+}
+menu ul li a:hover {
+    color: #d42c62; 
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+    display: block;
+}
+
+.menuu #ocultar:not(:hover){
+    display: none;
+
+}
+
+#menu-toggle:not(:checked) + .menu-icon + .menu {
+    display: none;
+}
+
+.principal{
+    background-image: url(./img/blackboard.jpg);
+}
+.principal img{
+    margin-top: 10px;
+    margin-left: 15px;
+    
+}
+
+/*----Contact ------*/
+.contact{
+    background-color: white;
+    margin-left: 15px;
+
+}
+
+.contact h1 {
+    color:#7A1628;
+    font-size: 30px;
+    margin-top:25px;
+    margin-bottom: 15px;
+}
+.contact p{
+    color:rgb(0, 0, 0);
+    margin-bottom: 15px;
+    
+}
+
+.contact h2{
+    font-size: 16px;
+    color:#7A1628;
+    margin-bottom: 20px;
+}
+
+.contact h3{
+    font-size: 14px;
+    color:#7A1628;
+    margin-bottom: 15px;
+}
+
+.contact address{
+    font-size: 15px;
+    font-style: normal;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.contact a[href^='mailto']{
+    text-decoration: none;
+    color:red;
+}
+
+header a[href^="mailto"]{
+    text-decoration: none;
+}
+/* Become an instructor */
+.become{
+    display: flex;
+    margin-top:25px;
+    margin-left:15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left:15px;
+    background-color: white;
+    justify-content: left;
+
+}
+.title{
+    color:#d42c62;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.tooltip .tooltip-visible{
+    visibility: hidden;
+    background-color: #aca9a9;
+    color: #000000;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    top:-20px;
+    left:40px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.num-title a{
+    text-decoration: none;
+}
+.link-red{
+    color:red;
+    text-decoration: none;
+}
+
+.tooltip{
+    position: relative;
+    border-bottom: 1px dotted black;
+    cursor:pointer;
+}
+.tooltip:hover .tooltip-visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.description-1{
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.img img{ 
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 90%;
+    overflow: visible;
+    height:500px;
+    padding-bottom: 25px;
+
+}
+
+.subtitle{
+    color:#7A1628;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.description-2{
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.caixa{
+    border: solid 2px #D11067;
+    padding: 20px;
+    padding-left: 40px;
+    width: 95%;
+    margin-right: 10px;
+    align-self: center;
+
+}
+
+
+.caixa a{
+    color: #D11067;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.caixa li{
+    list-style:decimal;
+    color:#D11067;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.num-title{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin-top:25px;
+    margin-bottom:25px;
+    justify-content: left;
+    align-items: center;
+}
+.num{
+    padding:10px 15px;
+    border:2px solid;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+    height: 50px;
+}
+.num-title-title{
+    align-self:left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.num-title-descripcion{
+    margin-left:10px;
+    line-height: 25px;
+    
+    
+}
+
+.target img{
+    margin-right: 10px;
+}
+.target{
+    display: flex;
+    flex-direction: column;
+    margin-left:0;
+    padding-top: 25px;
+    border: 1px solid rgb(180, 167, 167);
+    margin-bottom: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    margin-right: 0;
+    width: 98%;
+    background-color: #EDEDED;
+}
+.target-description li{
+    margin-left: 15px;
+    list-style: circle;
+    width: 150px;
+}
+.num-title-descripcion .target:nth-child(2) .target-description ul{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ width: 100%;
+ height: 150px;
+}
+
+.num-title-descripcion .target:nth-child(2) .target-description ul li:nth-child(1) {
+    order: -8;
+    width: 25%;
+}
+
+.num-title-descripcion .target:nth-child(2) .target-description ul li:nth-child(2) {
+    order: -5;
+    width: 25%;
+    
+}
+
+
+.num-title-descripcion .target:nth-child(2) .target-description ul li:nth-child(3) {
+    order: -2;
+}
+
+.num-title-descripcion .target:nth-child(2) .target-description ul li:nth-child(4) {
+    order: -7;
+    align-self: center;
+    
+}
+
+
+.num-title-descripcion .target:nth-child(2) .target-description ul li:nth-child(5) {
+    order: -5;
+}
+
+
+.num-title-descripcion .target:nth-child(2) .target-description ul li:nth-child(6) {
+    order: -6;
+}
+
+
+.num-title-descripcion .target:nth-child(2) .target-description ul li:nth-child(7) {
+    order: -4;
+}
+
+
+.num-title-descripcion .target:nth-child(2) .target-description ul li:nth-child(8) {
+    order: -1;
+}
+
+
+
+.target-title{
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 85%;
+}
+
+.descripcio-complementaria{
+    margin-left: 10px;
+}
+
+.num-title-descripcion .descripcio-complementaria{
+border: 1px solid rgba(7, 7, 7,0);
+margin-left:45px;
+line-height: 30px;
+margin-bottom: 30px;
+margin-right: 25px;
+
+}
+
+.num-title-descripcion input{
+    border-color: red;
+    margin-left: 45px;
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: white;
+    color:red;
+}
+
+.num-title-descripcion p:nth-child(1){
+    margin-bottom: 15px;
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 300px;
+    margin-left: 25%;
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+.caja li{
+    list-style:decimal;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.caja .contenido-caja{
+    margin-left:0px;
+    margin-bottom: 20px;
+    border:1px solid rgb(0, 0, 0);
+    border-bottom: 0;
+}
+.caja .cabecera{
+    margin-top: 10px;
+    
+    font-weight: bold;
+    border:1px solid black;
+    border-bottom: 0px;
+    background-color: #E3EDFD;
+
+}
+.caja li li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.imatge-fletxa{
+    font-size: 50px;
+    font-weight: bold;
+    rotate: 180deg;
+    text-align: center;
+}
+.caja ul li{
+    font-weight: bold;
+}
+.caja ul li li{
+    font-weight: normal;
+
+}
+.caja{
+    border-bottom: 1px solid black;
+}
+
+
+
+/*------------footer -------------*/
+
+.footer {
+    background-color: #1b3764;
+    padding: 25px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    color:white;
+}
+.footer img {
+    width: 200px;
+    height: auto;
+}
+.footer h2 {
+    margin: 25px 0;
+    font-size: 20px;
+    color:white;
+}
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color:white;
+}
+.newsletter {
+    margin: 20px 0;
+    color:white;
+}
+.newsletter h3{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    color:white;
+}
+.newsletter input[type="email"] {
+    padding: 30px;
+    width: 300px;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    background-color: #1b7593;
+    color:rgb(236, 235, 235);
+    font-size: 18px;
+    z-index:3;
+}
+.newsletter input[placeholder="Your Email"] {
+    color:white;
+}
+.strong{
+    font-weight: bold;
+}
+.newsletter button {
+    margin-top: 10px;
+    border-radius: 60px;
+    border: none;
+    background-color: #eceded;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    position: absolute;
+    left:260px;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer-links, .photo-credits {
+    margin: 10px 0;
+    font-size:13px;
+    color:white;
+}
+
+
+.footer p span {
+    font-family: "Montserrat", sans-serif;
+}
+}

@@ -1,0 +1,472 @@
+
+@media (min-width: 901px) and (max-width: 1200px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size:15px;
+    color:#172655;
+    
+}
+
+header a[href^="mailto"]{
+    text-decoration: none;
+}
+#montserrat{
+    font-family:"Montserrat", sans-serif;
+    font-size: 15px;
+}
+.cabecera-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    background-color: #D11067;
+    width: 100%;
+    
+    }
+
+
+.header-container{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #D11067;
+    width: 50%;
+    padding: 5px 25px 10px 10px; 
+}
+
+.icons-header img{
+    width: 20px;
+    height: 20px;
+}
+
+.container-imagenes-header{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color:  #D11067;
+    padding-top: 15px;
+    width: 100%;
+    
+
+}
+
+.container-imagenes-header .imagenes{
+    text-align: left;
+    
+
+    
+}
+
+.icons-header {
+    width: 400px;
+}
+
+
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+}
+.cabecera{
+
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 150px; /* Ajustar para que el menú se muestre justo debajo del menú icon */
+    right: 0;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    width: 150x;
+    border-radius: 10px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color:#FFF616;
+    text-decoration: none;
+    font-size: 18px;
+}
+menu ul li a:hover {
+    color: #d42c62; /* Color al pasar el ratón */
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+    display: block;
+}
+
+.menuu #ocultar:not(:hover){
+    display: none;
+
+}
+
+#menu-toggle:not(:checked) + .menu-icon + .menu {
+    display: none;
+}
+
+.principal{
+    background-image: url(./img/blackboard.jpg);
+}
+.principal img{
+    margin-top: 10px;
+    margin-left: 15px;
+    
+}
+
+/*----Contact ------*/
+.contact{
+    background-color: white;
+    margin-left: 15px;
+
+}
+
+.contact h1 {
+    color:#7A1628;
+    font-size: 30px;
+    margin-top:25px;
+    margin-bottom: 15px;
+}
+.contact p{
+    color:rgb(0, 0, 0);
+    margin-bottom: 15px;
+    
+}
+
+.contact h2{
+    font-size: 16px;
+    color:#7A1628;
+    margin-bottom: 20px;
+
+}
+.office-container{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap:wrap;
+}
+.office{
+    width: 50%;
+}
+.office:last-child{
+    width: 100%;
+}
+
+.contact h3{
+    font-size: 14px;
+    color:#7A1628;
+    margin-bottom: 15px;
+}
+
+.contact address{
+    font-size: 15px;
+    font-style: normal;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.contact a[href^='mailto']{
+    text-decoration: none;
+    color:red;
+}
+
+.uno{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: left;
+}
+.contacto-estudiantes{
+    width: 80%;
+}
+.dos{
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----students----*/
+.idioma{
+    text-align: center;
+}
+.students-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#EDEDED;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width:45%;
+}
+.card .img{
+    text-align: center;
+    margin:auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.img{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: end;
+}
+.card img{
+    border-radius: 120px;
+    border: 5px solid #333333;
+}
+.card img:last-child{
+    border: 5px solid #FEFBF4;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top:10px;
+    right:50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card .name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card .profile{
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.card .description-student{
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.card .translate a{
+    color:#7A1628;
+    font-size: 13px;
+    
+
+}
+.card .translate{
+    margin-bottom: 5px;
+}
+.card .mail{
+    color: red;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.card div:last-child{
+    margin-bottom: 25px;
+}
+
+.card div:first-child{
+    margin-top: 25px;
+}
+/*------------- Form ---------------*/
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: #FEFBF4;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    padding: 15px;
+
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+}
+
+.form h1, h2{
+    color:red;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.form p{
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    margin-bottom: 10px;
+    height: 45px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+
+.checkbox-group label {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom: 25px;
+    
+}
+    
+.checkbox-group  input{
+    height: 10px;
+    margin-right:10px
+
+}
+
+#area{
+    width: 100%;
+    background-color: white;;
+}
+
+.submit-button{
+    width: 350px;
+    border-radius: 15px;
+    height: 40px;
+    color:white;
+    background-color: blue;
+    font-weight: bold;
+    border-color: rgba(0,0,0,0);
+}
+
+/*------------footer -------------*/
+
+.footer {
+    background-color: #1b3764;
+    padding: 25px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    color:white;
+}
+.footer img {
+    width: 200px;
+    height: auto;
+}
+.footer h2 {
+    margin: 25px 0;
+    font-size: 20px;
+    color:white;
+}
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color:white;
+}
+.newsletter {
+    margin: 20px 0;
+    color:white;
+}
+.newsletter h3{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    color:white;
+}
+.newsletter input[type="email"] {
+    padding: 30px;
+    width: 300px;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    background-color: #1b7593;
+    color:rgb(236, 235, 235);
+    font-size: 18px;
+    z-index:3;
+}
+.newsletter input[placeholder="Your Email"] {
+    color:white;
+}
+.strong{
+    font-weight: bold;
+}
+.newsletter button {
+    margin-top: 10px;
+    border-radius: 60px;
+    border: none;
+    background-color: #eceded;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    position: absolute;
+    left:260px;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer-links, .photo-credits {
+    margin: 10px 0;
+    font-size:13px;
+    color:white;
+}
+
+
+.footer p span {
+    font-family: "Montserrat", sans-serif;
+}
+}
